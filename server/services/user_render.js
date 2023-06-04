@@ -18,6 +18,6 @@ exports.usersHomeRoute = (req,res)=>{
     })
 }
 
-exports.registeruser = (req, res)=>{
+exports.register_user = (req, res)=>{
     res.send('Customer Added Successfully')
 }

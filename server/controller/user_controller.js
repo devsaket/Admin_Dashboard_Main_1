@@ -1,4 +1,4 @@
-var UserTable = require('../models/usersmodel')
+var UserTable = require('../models/user_model')
 
 exports.create = (req, res) =>{
     console.log("User creation");

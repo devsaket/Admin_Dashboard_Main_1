@@ -30,7 +30,7 @@ connectDB()
 
 
 // routes 
-app.use('/', require('./routes/usersroute'))
+app.use('/', require('./routes/user_route'))
 
 
 
