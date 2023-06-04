@@ -2,21 +2,18 @@ const express = require('express')
 
 const router = express.Router()
 
-const {homeRoute, usersHomeRoute, register_user } = require('../services/user_render')
-const controller = require('../controller/user_controller')
-
-
-router.get('/', homeRoute)
-
-router.get('/users', usersHomeRoute)
-
-router.post('/register_users', register_user)
-
-
+const userController = require('../controller/user_controller')
 
 // API Paths
-router.post('/api/register_user', controller.create)
-router.get('/api/login_user', controller.find)
+
+// to register any user
+router.post('/api/register_user', userController.create)
+
+// to login any user
+// router.get('/api/login_user', userController.find)
+
+// to fetch all users 
+router.get('/api/get_all_users', userController.find)
 
 
 
