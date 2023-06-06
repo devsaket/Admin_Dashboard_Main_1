@@ -29,7 +29,7 @@ const SignUp = () => {
         console.log(formValues);
 
         const fvalues = { firstName: formValues.firstName, lastName: formValues.lastName, email: formValues.email, mobile: formValues.mobile, password: formValues.password }
-        console.log(fvalues);
+        // console.log(fvalues);
 
         axiosAuth.post(REGISTER_URL, fvalues)
         .then((res) => {
@@ -43,9 +43,6 @@ const SignUp = () => {
             }
         })
         .catch( (err) => console.log('Something went wrong!'))
-
-        // 
-
     };
 
     //input change handler
@@ -186,15 +183,6 @@ const SignUp = () => {
             // ...
         });
     }
-
-
-    // useEffect(() => {
-    //     if (Object.keys(formErrors).length === 0 && isSubmitting && verified) {
-            
-    //     }
-    // }, [formErrors, isSubmitting]);
-
-
 
     return (
         <>
