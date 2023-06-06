@@ -82,12 +82,12 @@ const Login = () => {
                                 <Form.Control type="password" name="password" placeholder="********" value={formValues.password} onChange={handleChange} className={formErrors.password && "input-error"} />
                                 {formErrors.password && (<span className="error text-danger">{formErrors.password}<br /></span>)}
                             </Form.Group>
-                            <Button type="submit">Login</Button>
+                            <div className='d-grid'><Button type="submit">Login</Button></div>
                         </Form>
 
                         <hr className='muted mt-4' />
                         <p className='text-center my-0'><Link to="/login" className='mx-2 text-decoration-none'>Forgot Password</Link></p>
-                        <p className='text-center'>Not a member <Link to="/signup" className='mx-2 fw-bold text-decoration-none'>Sign Up</Link></p>
+                        <p className='text-center'>Not a member <Link to="/signup" className='mx-2 fw-bold text-decoration-none btn btn-outline-primary mt-2'>Sign Up</Link></p>
                     </Col>
                 </Row>
             </Container>
