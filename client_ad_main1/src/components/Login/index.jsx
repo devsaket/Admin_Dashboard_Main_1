@@ -50,9 +50,7 @@ const Login = () => {
             errors.password = "Password cannot be blank";
         } else if (!((values.password).length >= 8 && (values.password).length <= 20)) {
             errors.password = "Password must be of 8 - 20 characters";
-        } else if (!passwordRegex.test(values.contact)) {
-            errors.email = "Invalid Password format";
-        }
+        } 
 
         return errors;
     };

@@ -7,13 +7,12 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import axiosAuth from '../../hooks/axiosAuthInterceptor';
 
-import app from '../firebase_config'
+import app from '../../hooks/firebase_config'
 const auth = getAuth(app);
 
 const REGISTER_URL = '/register_user';
 
 const SignUp = () => {
-    let navigate = useNavigate();
     const initialValues = { firstName: '', lastName: '', email: "", mobile: "", password: "", password2: "" };
 
     const [verifyButton, setVerifyButton] = useState(false)
